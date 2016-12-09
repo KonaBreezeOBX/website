@@ -159,14 +159,16 @@ function myMap() {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {
     center: new google.maps.LatLng(35.348259, -75.513567),
-    zoom: 16
+    zoom: 15
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 </script>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFg9JomDV_EFzYJ7aSkeT17qG40QhVxMk&sensor=false"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFg9JomDV_EFzYJ7aSkeT17qG40QhVxMk&sensor=false"></script> -->
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
