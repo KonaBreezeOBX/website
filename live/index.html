@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,15 +23,10 @@
     <title>OBX View</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,6 +34,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <link rel="apple-touch-icon" sizes="57x57" href="img/kb-iphone-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/kb-iphone-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="img/kb-iphone-icon-72x72.png" />
@@ -51,28 +46,29 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-location-arrow"></i> <span class="light">Avon,</span> NC
-                </a>
+                <a class="navbar-brand" href="#">OBX Sounds Good</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
+                    <li>
+                        <a class="page-scroll" href="https://en.wikipedia.org/wiki/Pamlico_Sound">Wiki</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://konabreezeobx.com">konabreezeobx</a>
+                        <a class="page-scroll" href="http://konabreezeobx.com">KonaBreezeOBX</a>
                     </li>
                 </ul>
             </div>
@@ -81,32 +77,88 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <br><br><br>
-                        <h3>View of Pamlico Sound</h3>
-                        <br><br><br><br><br>
-                        <h4>DAILY UPDATE PAGE UNDER CONSTRUCTION!</h4>
-                        <br><br><br><br><br><br><br>
-                        <ul class="list-inline banner-social-buttons">
-                            <li>
-                                <a href="https://goo.gl/zB1yzM" class="btn btn-default btn-lg"></i> <span class="network-name">Map It</span></a>
-                            </li>
-                            <br><br>
-                            <h5>Brought to you by:</h5>
-                            <img id="kbologo-img" src=img/kbologo.jpeg width="91" height="128">
-                            <br><br>
-                            <h6>&copy;2017 KonaBreezeOBX.com</h3>
-                        </ul>
-                    </div>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.dropbox.com/s/jp62eoiuw22xdlk/soundview-1.jpg?raw=1');"></div>
+                <div class="carousel-caption">
+                    <h2>December 2016</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.dropbox.com/s/xxeb12se8txudb2/soundview-2.jpg?raw=1');"></div>
+                <div class="carousel-caption">
+                    <h2>November 2016</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('https://www.dropbox.com/s/rvpbd25ubwrndxw/soundview-3.jpg?raw=1');"></div>
+                <div class="carousel-caption">
+                    <h2>October 2016</h2>
                 </div>
             </div>
         </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
     </header>
+
+    <!-- Page Content -->
+    <section id="about" class="container content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>View of the Pamlico Sound from the "Kona Breeze" in Avon, North Carolina</h3>
+                <img id="kbologo-img" src=img/kbologo-white.jpeg width="91" height="128">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy;2017 KonaBreezeOBX.com</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    </section>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
